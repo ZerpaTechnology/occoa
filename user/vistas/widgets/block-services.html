@@ -1,0 +1,14 @@
+<section>
+          <div class="container banner_wr">
+           
+            <ul class="banner">
+              {{if "block-services" in data:}}
+              {{for elem in data["block-services"]:}}
+              {{data["elem"]=elem}}
+              {{=incluir(data,"block-service")}}
+              {{pass}}
+              {{pass}}
+              
+            </ul>
+          </div>
+        </section>

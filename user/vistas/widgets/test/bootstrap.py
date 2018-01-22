@@ -1,0 +1,1 @@
+window.alert("en el widget tambien funciona")

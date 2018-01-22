@@ -1,0 +1,45 @@
+{{data["widget"]["titulo"]="Our awards"}}
+{{data["widget-bg-color"]="red"}}
+{{data["widget-color"]="white"}}
+{{data["widget-title-color"]="white"}}
+{{'''}}
+{{#EJEMPLO DE USO DE los parametros}}
+{{data["widget"]["titulo"]="Our awards"}}
+{{data["widget"]["call-to-actions"]=[
+            {"icon":"icon fa-comments","content":"""<h3><a href="#">Incididunt ut labore et dolore</a></h3>
+                    <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>"""},
+            {"icon":"icon fa-comments","content":"""<h3><a href="#">Incididunt ut labore et dolore</a></h3>
+                    <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>"""},
+            {"icon":"icon fa-comments","content":"""<h3><a href="#">Incididunt ut labore et dolore</a></h3>
+                    <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>"""},
+            {"icon":"icon fa-comments","content":"""<h3><a href="#">Incididunt ut labore et dolore</a></h3>
+                    <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>"""},
+                    ] }}
+{{'''}}
+
+<section class="well ins1" style="background-color:{{=data['widget-bg-color']}};color:{{=data['widget-color']}}">
+          <div class="container hr" >
+        {{if "titulo" in data["widget"]:}}
+          <h2 style="color:{{=data['widget-title-color']}}">{{=data["widget"]["titulo"]}}</h2>
+          {{pass}}
+                <ul class="row product-list">
+                {{widget=data["widget"]}}
+
+                {{for k,elem in enumerate(widget["call-to-actions"]):}}
+                
+                <li class="grid_6">
+
+                {{data["widget"]=elem}}
+                {{data["widget"]['widget-title-color']=data['widget-title-color']}}
+                {{=incluir(data,"call-to-action")}}
+                {{if k!=len(widget["call-to-actions"])/2 and k!=len(widget["call-to-actions"])-1:}}
+                <hr>
+                {{elif k==len(widget["call-to-actions"])/2:}}
+                </li>
+                <li class="grid_6">
+                {{pass}}
+                </li>
+                {{pass}}
+                </ul>
+          </div>
+        </section>

@@ -1,0 +1,59 @@
+{{#dejar widget como encapsulado por defecto}}
+{{data["widget"]={} }}
+{{data["widget"]["titulo"]="Help center"}}
+{{data["widget"]["titulo-icon"]="fa-comment"}}
+{{data["widget"]["infos"]=[{"titulo":"Ask professionals:",
+                            "detalle":"""
+                  <dl>
+                    <dt>Monday - Friday:</dt>
+                    <dd>8am-7pm</dd>
+                  </dl>
+                  <dl>
+                    <dt>Saturday:</dt>
+                    <dd>8am-5pm</dd>
+                  </dl>
+                  <dl>
+                    <dt>Sunday:</dt>
+                    <dd>1pm-5pm</dd>
+                  </dl>
+                            """},
+                           {"titulo":"24/7 Online Support:",
+                           "detalle":"""
+                           <dl>
+                            <dt>800-2345-6789</dt>
+                          </dl>
+                           """
+                           },
+]}}
+              <div class="grid_4">
+                <div class="info-box">
+                  <h2 class='{{=data["widget"]["titulo-icon"]}}'>{{=data["widget"]["titulo"]}}</h2>
+                  <hr>
+                  
+                  {{for k,elem in enumerate(data["widget"]["infos"]):}}
+                    <h3>{{=elem["titulo"]}}</h3>
+                    {{=elem["detalle"]}}
+                  {{if k< len(data["widget"]["infos"])-1: }}
+                    <hr>
+                  {{pass}}
+                  {{pass}}
+
+                  
+                </div>
+                <div class="owl-carousel">
+                
+                {{data["widget"]["commits"]=[1,2]}}
+                {{for elem in data["widget"]["commits"]:}}
+                {{#data["widget"]=elem}}
+                {{data["widget"]={} }}
+{{data["widget"]["img"]=data['base_url']+"static/images/page-1_img02.jpg" }}
+{{data["widget"]["commit"]="""<p>
+<q>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</q>
+</p>
+<cite><a href="#">Incididunt ut labor</a></cite>"""}}
+                
+
+                {{=incluir(data,"block-commit")}}
+                {{pass}}
+                </div>
+              </div>

@@ -1,0 +1,27 @@
+{{data["widget"]={} }}
+{{data["widget"]["list"]=[{"href":"#","titulo":"Praesent vestibulum molestie"},
+                          {"href":"#","titulo":"Praesent vestibulum molestie"},
+                          {"href":"#","titulo":"Praesent vestibulum molestie"},
+                          {"href":"#","titulo":"Praesent vestibulum molestie"},
+]}}
+<div class="row off4">
+  <div class="grid_3">
+    <ul class="marked-list wow fadeInRight">
+      {{k=0}}
+      {{while k< (len(data["widget"]["list"])/2):}}
+      <li><a href='{{=data["widget"]["list"][k]["href"]}}'>{{=data["widget"]["list"][k]["titulo"]}}</a></li>
+      {{k+=1}}
+      {{pass}}
+      
+      
+    </ul>
+  </div>
+  <div class="grid_3">
+    <ul data-wow-delay="0.2s" class="marked-list wow fadeInRight">
+    {{while k< len(data["widget"]["list"]):}}
+      <li><a href='{{=data["widget"]["list"][k]["href"]}}'>{{=data["widget"]["list"][k]["titulo"]}}</a></li>
+      {{k+=1}}
+      {{pass}}
+    </ul>
+  </div>
+</div>

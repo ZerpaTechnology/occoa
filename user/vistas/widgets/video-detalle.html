@@ -1,0 +1,43 @@
+<section>
+{{data["widget"]={} }}
+{{data["widget"]["iframe"]="//player.vimeo.com/video/37582125?wmode=transparent"}}
+{{data["widget"]["content"]="""<h2>Quick facts</h2>
+                <div class="row">
+                  <div class="grid_3">
+                    <dl class="info">
+                      <dt>Name</dt>
+                      <dd>Business Company</dd>
+                      <dt>Birth Date</dt>
+                      <dd>June 23, 1987</dd>
+                      <dt>Place of birth</dt>
+                      <dd>Los Angeles, California</dd>
+                    </dl>
+                  </div>
+                  <div class="grid_3">
+                    <dl class="info">
+                      <dt>History</dt>
+                      <dd>
+                        <ul>
+                          <li>Lorem ipsum dolor sit 1997-1999 adipis</li>
+                          <li>Pellentesque sed dolor  1995-1999</li>
+                          <li>Aliquam congue nisl 2001-2005</li>
+                          <li>Mauris accumsa vel diam 2006-2008</li>
+                          <li>Sed in lacus ut 2008-2010 enim adipiscing </li>
+                        </ul>
+                      </dd>
+                    </dl>
+                  </div>
+                </div>"""}}
+          <div class="container hr well1 ins2">
+            <div class="row">
+              <div class="grid_6">
+                <div class="video">
+                  <iframe src="{{=data['widget']['iframe']}}" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="grid_6">
+                {{=data["widget"]["content"]}}
+              </div>
+            </div>
+          </div>
+        </section>

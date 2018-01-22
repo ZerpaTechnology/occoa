@@ -1,0 +1,9 @@
+doc+='''<div>\n'''
+#=incluir(data,"box-form-login")
+doc+='''\n'''
+try: doc+=str(do_shortcode("[Estudiantes-iframe sc='login']"))
+except Exception as e: doc+=str(e)
+doc+='''\n		<img src="'''
+try: doc+=str(data['base_url'])
+except Exception as e: doc+=str(e)
+doc+='''static/img/intro_admission.jpg" class="width-100p" style="max-height:300px">\n		<div class="marg-t2 bg-graylight b-r12 pad-1">\n			<article>\n				<h5 class="ubuntu_red">UNEXPO ADMINSION EN UN GLANCE</h5>\n				Student Enrollment\n\n    Undergraduates: 7,032\n    Graduates: 9,304\n\nClass of 2020\n\n    43,997 applicants\n    1,739 matriculated\n    From 50 states and 76 countries\n\nUndergraduate admission\n\n    A holistic review process evaluates academic excellence, intellectual vitality and personal context of each applicant.\n    Restrictive Early Action application deadline is November 1.\n    Regular Decision application deadline is January 3.\n\nGraduate admission\n\n    More than 65 departments and programs offer graduate study.\n    Business, Law and Medicine have separate admission procedures.\n    Application deadlines vary by program.\n\nFinancial Aid\n\n    U.S. undergraduates are admitted on a need-blind basis; 100% of need is met for all admitted domestic students.\n    For undergraduates from households with incomes below $125,000, tuition is fully covered by scholarship and/or grant aid.\n    Undergraduate parents with incomes below $65,000 are expected to pay nothing toward tuition, room or board.\n    Nearly 70% of undergraduate students receive assistance toward tuition costs.\n    Graduate study aid is based on availability of funds and academic merit.\n    About 85% of graduate students receive financial aid.\n\n			</article>\n			<div class="text-right"><a href="" class="ubuntu_red"> >> Saber mas </a></div>\n		</div>\n</div>		'''

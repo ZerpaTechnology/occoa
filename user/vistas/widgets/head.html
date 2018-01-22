@@ -1,0 +1,57 @@
+<head>
+    <title>Privacy Policy</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="{{=data['base_url']}}static/css/grid.css">
+    <link rel="stylesheet" href="{{=data['base_url']}}static/css/style.css">
+    <link rel="stylesheet" href="{{=data['base_url']}}static/css/google-map.css">
+    <link rel="stylesheet" href="{{=data['base_url']}}static/css/mailform.css">
+    <script src="{{=data['base_url']}}static/js/jquery.js"></script>
+    <script src="{{=data['base_url']}}static/js/jquery-migrate-1.2.1.js"></script>
+    
+    <script src="{{=data['base_url']}}static/js/device.min.js"></script>
+    <head>
+ <title>Administrador</title>
+ <meta charset="utf-8">
+   <meta http-equiv="pragma" content="no-cache">
+ <link rel="icon" type="image/png" href="{{=config.base_url}}static/imgs/logos/logoZtec.png" />
+ <link rel="shortcut icon" href="{{=config.base_url}}static/imgs/logos/logoZtec.png" />
+ <script src="{{=config.base_url}}static/js/jquery-3.1.0.js"></script>
+ <link rel="stylesheet" href="{{=config.base_url}}static/css/jquery.mCustomScrollbar.css" />
+ <script type="text/javascript" src="{{=config.base_url}}static/js/jquery.mCustomScrollbar.js"></script>
+ <link rel="stylesheet" type="text/css" href="{{=config.base_url}}static/css/estilos.css">
+ <link rel="stylesheet" type="text/css" href="{{=config.base_url}}static/css/bootstrap.css">
+ <link rel="stylesheet" type="text/css" href="{{=config.base_url}}static/css/flexboxgrid.css">
+ <link rel="stylesheet" type="text/css" href="{{=config.base_url}}static/css/ff.css">
+ 
+ 
+ <link href="{{=config.base_url}}static/css/perfect-scrollbar.min.css" rel="stylesheet">
+ 
+  <script type="text/javascript" src="{{=config.base_url}}static/script/file=Config.js&manager=True"></script>
+  
+  <script type="text/javascript" src="{{=config.base_url}}static/js/python/__javascript__/Codificador.js"></script>
+  
+  <!--<script type="text/python3" src="{{=config.base_url}}static/brython/nuclear.by"></script>-->
+  <script type="text/javascript" src="{{=config.base_url}}static/js/python/__javascript__/py_datos.js"></script>
+  <script type="text/javascript" src="{{=config.base_url}}static/js/python/__javascript__/nuclear.js"></script>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+
+ 
+{{if "vars" in data:}}
+
+{{for elem in data["vars"]:}}
+<var name='{{=elem}}' style="display: none">{{=decode(str(data["vars"][elem]))}}</var>
+{{pass}}
+{{pass}}
+
+
+
+
+
+
+
+  </head>
+

@@ -1,0 +1,55 @@
+woodridge
+
+El Proyecto  consistio en el diseño y desarrollo de una pagina web onepage y una pagina de formulario de contacto para un cliente cual negocio es arrendamiento de apartamentos, el cual estuvimos trabajando en conjunto con otra compañia iokary MPC, este  sitio se divide en la siguientes secciones:
+
+* Home: consiste de una seccion con un slider de tipo Hero.
+
+* About: despues nos encontramos que cada seccion posee una banda con un fondo parallax y texto que se mueve en conjunto con el scroll que en combinacion con el smooth scroll de la barra de navegacion no da un efecto bastante interesante, Ademas esta seccion se componen de dos columnas para mostrar información.
+
+* Gallery: esta seccion se compone de 2 columnas la primera se trata de un video promocional del negocio, la segunda columna trata de un carrousel el cual contiene imagenes de negocio y al hacer clic se despliega un slider fullscreen para visualizar mejor cada imagen
+
+* Floor plans: En esta seccion podremos observar distintas cajas especificando cada servicio ofecido, cada caja cuenta con un efecto hover el cual muestra un resumen de las componentes del servicio ofrecido, al hacer click se despliega una ventanta para mas detalles, del lado izquierdo un slider para visualizar los planos del apartamento, del lado derecho una lista de las componentes del servicio con iconos
+
+* More options: se trata de una seccion con un fondo parallax, donde se ubican los logotipos de las otras marcas del cliente, las cuales al hacer click redirecciona a la pagina hermana 
+
+* Contact us: para esta seccion vemos dos columnas, la izquierda ubicamos un widget de mapa para ubicar el negocio y del lado derecho informacion de contacto junto a un boton llamado submit el cual nos rederecciona a la segunda pagina del proyecto el cual es un formulario de contacto personalizado.
+
+
+storm FC
+
+Se trata de una web landigpage para un equipo de futbol. en la barra de navegacion podremos las pagina del website la cuales son las siguientes:
+
+* the club: Esta pagina ofrece informacion acerca del club en diferentes secciones como por ejemplo: noticias, sponsors, videos, redes sociales
+
+* the team: ...
+
+* News: ...
+
+* Membership: ...
+
+* Internships: ...
+
+* Shop: ...
+
+* Contact: ...
+
+* Multilenguaje
+
+======================================
+
+* galeria
+* subscripcion
+* informacion
+* smooth scroll
+* formulario de contacto
+* otras marcas
+* popup
+* ventas popup
+* slider
+* redes sociales
+* video
+* mapa
+* landingpage
+* onepage
+* layout
+* layout personalizado
